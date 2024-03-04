@@ -22,7 +22,7 @@ namespace TestProject
         }
 
         [Fact]
-        public async void GetNotNull()
+        public void GetNotNull()
         {
 
             var value = weatherForecastController.Get();
@@ -32,7 +32,7 @@ namespace TestProject
         }
 
         [Fact]
-        public async void GetOkResult()
+        public void GetOkResult()
         {
             var value = weatherForecastController.Get();
             var result = value as OkObjectResult;
