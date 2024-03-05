@@ -27,7 +27,7 @@ namespace TestProject
 
             var value = weatherForecastController.Get();
             _logger.LogInformation(value.ToString());
-            var result = value as OkObjectResult;
+            var result = null;//value as OkObjectResult;
             Assert.NotNull(result);
         }
 
